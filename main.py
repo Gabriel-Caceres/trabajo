@@ -1,7 +1,5 @@
 from random import randint
 
-
-
 opcion = 0
 flag = True
 
@@ -12,6 +10,17 @@ est_civil = {"C":"Casado",
 
 generos = {"M":"Masculino",
            "F":"Femenino",}
+
+
+dicc = {"Rut": ["219766742"],
+        "Nombre": ["Gabriel Caceres"],
+        "Edad": ["19"],
+        "Estado Civil": [est_civil["S"]],
+        "Genero": [generos["M"]],
+        "fecha": ["13-06-2025"]}
+
+meses = ["Enero 2024", "Febrero 2024", "Marzo 2024", "Abril 2024", "Mayo 2024",
+         "Junio 2024", "Julio 2024", "Agosto 2024", "Septiembre 2024", "Octubre 2024", "Noviembre 2024", "Diciembre 2024"]
 
 
 dicc = {"Rut": [],
@@ -155,7 +164,11 @@ while opcion != 4:
         print("\tCopy Right")
         print("\tGabriel Barrea | Gabriel Caceres | Jean Indey")
         print("\n****CIERRE EXITOSO****")
+
+        print("")
+
         print("")
 
     if opcion == 5:
         print(dicc)
+
