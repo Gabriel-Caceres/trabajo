@@ -15,3 +15,30 @@ dicc = {"Rut": ["219766742"],
         "fecha": "13-06-2025"}
 
 print(dicc)
+
+while opcion != 4:
+    try:
+        opcion = int(input("Seleccione una opcion \n1.-Grabar. \n2.-Buscar. \n3.-Imprimir Certificados \n4.-Salir \nSeleccion: "))
+    except Exception:
+        print("ingreso invalido")
+
+    if opcion == 1:
+        print("Grabando...")
+        try:
+            rut = int(input("Ingrese Rut (sin punto ni guion):"))
+        except Exception:
+            print("Rut Invalido recuerde ingresar su rut sin puntos ni guion")
+        nombre = input("Ingrese Nombre:")
+        apellido = input("Ingrese el apellido paterno:")
+        edad = input("Ingrese su edad:")
+        estado = input("Ingrese su estado:")
+        genero = input("Ingrese su genero:")
+        fecha = input("Ingrese su fecha de afiliacion:")
+        nombre_completo = nombre + "" + apellido
+        dicc["rut"] = rut
+        dicc["nombre"] = nombre_completo
+        dicc["Edad"] = edad
+        dicc["Estado Civil"] = est_civil[estado]
+        dicc["Genero"] = generos[genero]
+        dicc["fecha"] = fecha
+        print(dicc)
