@@ -62,9 +62,16 @@ while opcion != 4:
                 print(f"{clave.ljust(20)}: {valores[indice]}")
             print("-"*50)
             for mes in meses:
-                print(f"{mes.ljust(20)}: $ {randint(1000,15000)}")
+                print(f"{mes.ljust(20)}: $ {randint(1000,1500)}")
             print("-"*50, "\n")
 
-
         except ValueError:
-            print("\n RUT no encontrado.")
+            print("\n *****RUT NO ENCONTRADO*****")
+    
+    if opcion == 4:
+        print("\nSaliendo del sistema...")
+        print("\tVersion SYS 2025-06 v.1")
+        print("\tCopy Right")
+        print("\tGabriel Barrea | Gabriel Caceres | Jean Indey")
+        print("\n****CIERRE EXITOSO****")
+        print("")
