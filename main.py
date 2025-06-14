@@ -42,3 +42,7 @@ while opcion != 4:
         dicc["Genero"] = generos[genero]
         dicc["fecha"] = fecha
         print(dicc)
+
+
+    if opcion == 3:
+        pass
